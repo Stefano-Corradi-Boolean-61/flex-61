@@ -1,0 +1,149 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 50px;
+  color: white;
+  font-size: 30px;
+}
+h3{
+  color: brown;
+  text-align: center;
+  font-size: 25px;
+}
+
+.flex-container{
+  display: flex;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  background-color:chocolate;
+  margin-bottom: 20px;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+  background-color: brown;
+}
+
+
+.flex-container.due{
+  flex-direction: column;
+}
+
+.flex-container.tre{
+  flex-direction: column-reverse;
+}
+
+.flex-container.quattro{
+  flex-direction: row-reverse;
+}
+
+.flex-container.cinque{
+  /* justify-content allinea sul main-axis */
+  justify-content:flex-end;
+}
+
+.flex-container.sei{
+  /* align-items allinea sul cross-axis */
+  align-items: flex-end;
+}
+
+.flex-container.sette{
+  justify-content:flex-end;
+  align-items: flex-end;
+}
+
+/* per centrare un elemento!! */
+.flex-container.otto{
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container.nove{
+  justify-content:space-between;
+}
+
+.flex-container.dieci{
+  justify-content:space-around;
+}
+
+.flex-container.undici{
+  justify-content:space-evenly;
+}
+
+.flex-container.dodici{
+  justify-content: center;
+  align-items:baseline;
+}
+
+.flex-container.dodici .a{
+  height: 120px;
+}
+.flex-container.dodici .b{
+  height: 150px;
+}
+.flex-container.dodici .c{
+  height: 90px;
+}
+
+.flex-container.tredici{
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.flex-container.quattordici{
+  flex-wrap: wrap-reverse;
+  justify-content:space-between;
+}
+
+/* proprietà dei flex items */
+
+.box-basis{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100px;
+  border: 1px solid white;
+  background-color: brown;
+}
+.flex-container.sedici,
+.flex-container.diciassette{
+  width: 90%;
+}
+.flex-container.sedici .a{
+  flex-grow: 0;
+}
+.flex-container.sedici .b{
+  flex-grow: 2;
+}
+.flex-container.sedici .c{
+  flex-grow: 1;
+}
+
+.flex-container.diciassette .b{
+  flex-shrink: 0;
+}
+.flex-container.diciassette .c{
+  flex-shrink: 2;
+}
+
+.flex-container.diciotto .a{
+  order: 2;
+}
+.flex-container.diciotto .b{
+  order: 3;
+}
+.flex-container.diciotto .c{
+  order: 1;
+}
